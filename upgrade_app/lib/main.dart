@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _upgradeApp() async {
     if (Platform.isIOS) {
-      final String url = 'https://itunes.apple.com/cn/app/id1442790272';
+      final String url = 'https://itunes.apple.com/cn/app/[:id]';
       if (await canLaunch(url)) {
         await launch(url, forceSafariVC: false);
       } else {
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
         if (downloadSubscription == null) {
           downloadSubscription = stream
               .receiveBroadcastStream(
-                  'https://backend.lanjingerp.com/user/rest/com.ihoment.lanjingerp-app-latest.apk')
+                  'https://www.example.com/app-latest.apk')
               .listen(_updateDownloadState);
         }
       } else {

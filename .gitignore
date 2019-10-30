@@ -1,0 +1,11 @@
+# Flutter/Dart/Pub related
+**/pubspec.lock
+
+
+# Android related
+**/android/.project
+**/android/.settings/
+
+# iOS/XCode related
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Podfile.lock

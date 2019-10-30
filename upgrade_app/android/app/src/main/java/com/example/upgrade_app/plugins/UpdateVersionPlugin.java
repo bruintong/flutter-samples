@@ -100,7 +100,7 @@ public class UpdateVersionPlugin implements EventChannel.StreamHandler {
 
     @Override
     public void onCancel(Object o) {
-        Log.i(TAG, "取消下载-集成的第三方下载没有提供取消方法");
+        update.stop();
     }
 
 }

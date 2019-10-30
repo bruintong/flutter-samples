@@ -52,8 +52,22 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Locale locale;
   void _changeLanguage() {
-    I18n.onLocaleChanged(new Locale('zh'));
+    Locale myLocale = locale ?? Localizations.localeOf(context);
+    String lang = myLocale.toString();
+    String languageCode = myLocale.languageCode;
+    print('changeLanguage lang: $lang, language: $languageCode');
+
+    if (languageCode == 'zh') {
+      myLocale = Locale('en');
+    } else {
+      myLocale = Locale('zh');
+    }
+    I18n.onLocaleChanged(myLocale);
+    setState(() {
+      locale = myLocale;
+    });
   }
 
   @override

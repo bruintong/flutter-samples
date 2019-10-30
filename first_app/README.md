@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+Run the following command to create a new project.
+``` bash
+$ flutter create --org com.example --ios-language objc --android-language java first_app
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
