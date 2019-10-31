@@ -298,7 +298,7 @@ class _I18n_es_ES extends I18n {
 
 Starting form version 0.12.0 the module detects the text direction automatically - based on the language code. If you want to change the automatic behaviour, you can change the text direction in the i18nconfig.json file:
 
-``` json
+```
 {
   rtl: ["ar-AR"],
   ltr: []
@@ -311,7 +311,7 @@ Starting form version 0.12.0 the module detects the text direction automatically
 
 By default, your languages are not supported by iOS out of the box. To enable them, add the following to your your_project/ios/Runner/Info.plist file:
 
-``` plist
+``` xml
 <key>CFBundleLocalizations</key>
   <array>
     <string>en</string>
@@ -324,7 +324,7 @@ By default, your languages are not supported by iOS out of the box. To enable th
 
 Your file should look something like this:
 
-``` plist
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
